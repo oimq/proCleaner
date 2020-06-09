@@ -106,7 +106,7 @@ print(str(pc))
 Cleansing start, fields are belows
 ['url', 'title', ...].
 
-100%|███████████████████████████████████████████████████████████████████████████| 1411/1411 [01:41<00:00, 13.86it/s]
+100%|████████████████████████████████████████████████████████████| 1411/1411 [01:41<00:00, 13.86it/s]
 
 Save cleaned data success. ./cleaned.json
 Save dirty indices success. ./dirtied.json
