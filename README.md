@@ -91,11 +91,35 @@ SWEEPER
 
 * Script
 ```python3
-
+CONF_PATH = './settings'
+DATA_PATH = './scraped.json'
+pc = proSweeper('localhost', 9200, DATA_PATH, CONF_PATH)
+pc.start(
+   cry=True, 
+   clean_path='./cleaned.json',
+   dirty_path='./dirtied.json'
+)
+print(str(pc))
 ```
 * Outputs
 ```python
+Cleansing start, fields are belows
+['url', 'title', ...].
 
+100%|███████████████████████████████████████████████████████████████████████████| 1411/1411 [01:41<00:00, 13.86it/s]
+
+Save cleaned data success. ./cleaned.json
+Save dirty indices success. ./dirtied.json
+
+** Reports **
+
+ - Total items : 1411
+ - Dirty items : 412
+ - Clean items : 999
+ - Clean/Total Percentages : 70.801% 
+ - Cleanning Start : 2020. ?. ?. ? : ? : 24.251779.
+ - Cleanning End   : 2020. ?. ?. ? : ? : 6.66234.
+ - Time Deltas : 0 days, 101.814455 seconds
 ```
 
 ***
